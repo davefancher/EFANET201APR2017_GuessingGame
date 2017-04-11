@@ -11,8 +11,12 @@ namespace GuessingGame.Controllers
 {
     public class GameController : Controller
     {
+        // Backing field to hold the injected IRandomNumberGenerator
         private readonly IRandomNumberGenerator _rng;
 
+        // Constructor accepts an instance of something that implements
+        // the IRandomNumberGenerator interface. The Named attribute tells
+        // ninject to locate a binding named "AdvancedRNG"
         public GameController(
             [Named("AdvancedRNG")]
             IRandomNumberGenerator rng)
