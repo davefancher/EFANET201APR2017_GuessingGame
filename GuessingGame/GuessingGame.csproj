@@ -148,6 +148,9 @@
     </Compile>
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdvancedRandomNumberGenerator.cs" />
+    <Compile Include="Services\BasicRandomNumberGenerator.cs" />
+    <Compile Include="Services\IRandomNumberGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
